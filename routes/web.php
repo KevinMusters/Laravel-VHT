@@ -17,5 +17,7 @@ Route::get('/', function () {
 Route::get('/profile', 'ProfileController@show');
 Route::get('/profiles', 'ProfileController@index');
 Route::get('/products', 'ProductController@index');
+Route::get('/categories', 'CategoryController@index');
+Route::get('/product/{id}', 'ProductController@detail');
 
 //Maak een pagina die alle profielen laat zien

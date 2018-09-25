@@ -8,12 +8,10 @@
     <title>Products</title>
 </head>
 <body>
-    <h1>Products</h1>
-    <ul>
-        @foreach($products as $product)
-            <li><a href="product/{{$product->id}}">{{$product['name']}}</a> : {{$product['description']}}</li>
-        @endforeach
-    </ul>
+    <h1>{{$product->name}}</h1>
+    <p>{{$product->description}}</p>
+    <p>{{$product->quantity}}</p>
+    <p>{{$product->price}}</p>
 </body>
 </html>
 
