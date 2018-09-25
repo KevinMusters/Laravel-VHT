@@ -16,7 +16,7 @@ class ProductController extends Controller
     }
 
     public function detail($id){
-        $productDetails = Product::where('id', '=', $id)->firstOrFail();
+        $productDetails = Product::findOrFail($id);
         return view('products/detail', ['product' => $productDetails]);
     }
 }

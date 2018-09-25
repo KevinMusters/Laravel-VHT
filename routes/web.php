@@ -18,6 +18,6 @@ Route::get('/profile', 'ProfileController@show');
 Route::get('/profiles', 'ProfileController@index');
 Route::get('/products', 'ProductController@index');
 Route::get('/categories', 'CategoryController@index');
-Route::get('/product/{id}', 'ProductController@detail');
+Route::get('/product/{id}', 'ProductController@detail')->name('product');
 
 //Maak een pagina die alle profielen laat zien

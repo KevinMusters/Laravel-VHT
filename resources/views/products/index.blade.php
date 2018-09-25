@@ -11,7 +11,7 @@
     <h1>Products</h1>
     <ul>
         @foreach($products as $product)
-            <li><a href="product/{{$product->id}}">{{$product['name']}}</a> : {{$product['description']}}</li>
+            <li><a href="{{ route('product', $product->id) }}">{{$product->name}}</a> : {{$product->description}}</li>
         @endforeach
     </ul>
 </body>
